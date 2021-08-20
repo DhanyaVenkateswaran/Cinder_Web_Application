@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Cinder | Admissions </title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" href="Pics/logo.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        footer {
+            margin: 0px;
+        }
+        
+        .btn {
+            border: none;
+            padding: 12px 28px;
+            border-radius: 8px;
+            color: white;
+            background-color: rgb(0, 48, 138);
+            display: inline-block;
+            margin: 4px 2px;
+        }
+        
+        .btn a {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        
+        .btn:hover {
+            background-color: #f4511e;
+            color: white;
+        }
+        
+        body {
+            font: 400 18px Lato, sans-serif;
+            line-height: 1.8;
+            color: black;
+        }
+        
+        h4 {
+            font-size: 19px;
+            line-height: 1.375em;
+            color: #303030;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            font-size: 24px;
+            text-transform: uppercase;
+            color: #303030;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        
+        .navbar {
+            margin-bottom: 0;
+            padding: 10px;
+            background-color: rgb(0, 48, 138);
+            z-index: 9999;
+            border: 0;
+            font-size: 12px !important;
+            line-height: 1.42857143 !important;
+            letter-spacing: 4px;
+            border-radius: 0;
+            font-family: Montserrat, sans-serif;
+        }
+        
+        .navbar li a,
+        .navbar .navbar-brand {
+            color: white !important;
+        }
+        
+        .navbar-nav li a:hover,
+        .navbar-nav li.active a {
+            color: #f4511e !important;
+            font-weight: bold;
+            background-color: #fff !important;
+        }
+        
+        .navbar-default .navbar-toggle {
+            border-color: transparent;
+            color: black !important;
+        }
+        
+        .wrapper {
+            border-radius: 25px;
+            background-color: white;
+            width: 400px;
+            padding: 20px;
+        }
+        /* Style inputs with type="text", select elements and textareas */
+        
+        input[type=text],
+        select,
+        textarea {
+            width: 100%;
+            /* Full width */
+            padding: 12px;
+            /* Some padding */
+            border: 1px solid #ccc;
+            /* Gray border */
+            border-radius: 4px;
+            /* Rounded borders */
+            box-sizing: border-box;
+            /* Make sure that padding and width stays in place */
+            margin-top: 6px;
+            /* Add a top margin */
+            margin-bottom: 16px;
+            /* Bottom margin */
+            resize: vertical/* Allow the user to vertically resize the textarea (not horizontally) */
+        }
+        /* Style the submit button with a specific background color etc */
+        
+        input[type=submit] {
+            background-color: #04AA6D;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        /* When moving the mouse over the submit button, add a darker green color */
+        
+        input[type=submit]:hover {
+            background-color: #45a049;
+        }
+        /* Add a background color and some padding around the form */
+        
+        .containerf {
+            border-radius: 5px;
+            background-color: #f2f2f2;
+            padding: 20px;
+        }
+        
+        .containerf h2 {
+            background-color: black;
+            padding: 50px;
+            width: auto;
+            border-radius: 5px;
+            font-weight: bold;
+            color: white;
+        }
+    </style>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="padding: 20px;">
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>
+    <span class="icon-bar"></span>                        
+  </button>
+                <a href="#"><img src="Pics/logo.png" width="100" height="100"></a>
+                <a class="navbar-brand" href="#"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right" style="padding-top: 20px;">
+                    <li><a href="register.html"> BACK TO FORM </a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <div class="containerf text-center">
+        <br>
+        <br>
+        <h1> Cutoff Calculator </h1>
+        <form action="#">
+            <br>
+            <br>
+            <label for="mm"> Mathematics mark : </label>
+            <input type="number" id="mm" name="mm" placeholder=" Mark out of 100 ">
+            <br>
+            <br>
+            <label for="mp"> Core Subject 1 mark : </label>
+            <input type="number" id="mp" name="mp" placeholder=" Mark out of 100 ">
+            <br>
+            <br>
+            <label for="mc"> Core Subject 2 mark : </label>
+            <input type="number" id="mc" name="mc" placeholder=" Mark out of 100 ">
+            <br>
+            <br>
+            <input type="submit" value="Submit" onclick="cal()" value="calculate">
+            <br>
+            <br>
+            <br>
+            <h2>Your Cutoff is : <span id="result"></span></h2>
+        </form>
+
+    </div>
+
+    <footer>
+        <ul class="social-links text-center">
+            <li><a href="https://www.instagram.com/ipotat_03/" target="_blank"><i class="fa fa-instagram fa-fw"></i></a></li>
+            <li><a href="https://twitter.com/Dhanya_313" target="_blank"><i class="fa fa-twitter fa-fw"></i></a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100068726438333" target="_blank"><i class="fa fa-facebook fa-fw"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/dhanya-venkateswaran-1559b5188/" target="_blank"><i class="fa fa-linkedin fa-fw"></i></a></li>
+        </ul>
+        <p> Copyright &copy; Cinder 2021. All rights reserved.</p>
+        <span>Made with<span class="heart"> ♥ </span> by Dhanya Venkateswaran</span>
+
+    </footer>
+    <script>
+        function cal() {
+            num1 = document.getElementById("mm").value;
+            num2 = document.getElementById("mp").value;
+            num3 = document.getElementById("mc").value;
+            document.getElementById("result").innerHTML = +num1 + +(num2 / 2) + +(num3 / 2);
+        }
+    </script>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

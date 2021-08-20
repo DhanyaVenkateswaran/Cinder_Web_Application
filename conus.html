@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title> Cinder | Contact Us </title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link rel="icon" href="Pics/logo.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+        footer {
+            margin: 0px;
+        }
+        
+        .btn {
+            border: none;
+            padding: 12px 28px;
+            border-radius: 8px;
+            color: white;
+            background-color: rgb(0, 48, 138);
+            display: inline-block;
+            margin: 4px 2px;
+        }
+        
+        .btn a {
+            color: white;
+            font-weight: bold;
+            text-decoration: none;
+        }
+        
+        .btn:hover {
+            background-color: #f4511e;
+            color: white;
+        }
+        
+        body {
+            font: 400 15px Lato, sans-serif;
+            line-height: 1.8;
+            color: black;
+        }
+        
+        h4 {
+            font-size: 19px;
+            line-height: 1.375em;
+            color: #303030;
+            font-weight: 400;
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            font-size: 24px;
+            text-transform: uppercase;
+            color: #303030;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        
+        .navbar {
+            margin-bottom: 0;
+            padding: 10px;
+            background-color: rgb(0, 48, 138);
+            z-index: 9999;
+            border: 0;
+            font-size: 12px !important;
+            line-height: 1.42857143 !important;
+            letter-spacing: 4px;
+            border-radius: 0;
+            font-family: Montserrat, sans-serif;
+        }
+        
+        .navbar li a,
+        .navbar .navbar-brand {
+            color: white !important;
+        }
+        
+        .navbar-nav li a:hover,
+        .navbar-nav li.active a {
+            color: #f4511e !important;
+            font-weight: bold;
+            background-color: #fff !important;
+        }
+        
+        .navbar-default .navbar-toggle {
+            border-color: transparent;
+            color: black !important;
+        }
+    </style>
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" style="padding: 20px;">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+                <a href="homepage.html"><img src="Pics/logo.png" width="100" height="100"></a>
+                <a class="navbar-brand" href="#"></a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right" style="padding-top: 20px;">
+                    <li><a href="homepage.html"> HOME </a></li>
+                    <li><a href="about.html"> ABOUT US</a></li>
+                    <li><a href="careers.html"> CAREERS </a></li>
+                    <li><a href="conus.html">CONTACT</a></li>
+                    <li><a href="login.html">REGISTER/LOGIN</a></li>
+                    <li><a href="adminlogin.html">ADMIN</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div id="contact" class="container-fluid">
+        <h1 class="text-center"> CONTACT US </h1>
+        <br>
+        <br>
+        <div class="row">
+            <div class="col-sm-5" style="padding-left: 50px;">
+                <p> Swing by for a cup of coffee, or leave us a message. </p>
+                <p><span class="glyphicon glyphicon-map-marker"></span><a href="https://www.google.com/maps/search/anna+university/@12.9996938,80.1723994,13z/data=!3m1!4b1?hl=en"> Anna University, Chennai, Tamil Nadu.</a></p>
+                <p><span class="glyphicon glyphicon-phone"></span> +91 9789002028</p>
+                <p><span class="glyphicon glyphicon-envelope"></span><a href="mailto: vdhanya03@gmail.com"> vdhanya03@gmail.com </a></p>
+            </div>
+            <form action="conus.php" method="POST">
+                <div class="col-sm-7" style="padding-right: 50px;">
+
+                    <div class="row">
+
+                        <div class="col-sm-6 form-group">
+                            <label> NAME : </label>
+                            <input class="form-control" id="fname" name="fname" placeholder="Name" type="text" required>
+                        </div>
+                        <div class="col-sm-6 form-group">
+                            <label> EMAIL ID: </label>
+                            <input class="form-control" id="email" name="email" placeholder="email@email.com" type="email" required>
+                        </div>
+                    </div>
+                    <label> MESSAGE : </label>
+                    <textarea class="form-control" id="comments" name="comments" placeholder="Text" rows="5"></textarea><br>
+                    <div class="row">
+                        <div class="col-sm-12 form-group">
+                            <button class="btn btn-default pull-left" type="submit">Send</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer>
+        <ul class="social-links text-center">
+            <li><a href="https://www.instagram.com/ipotat_03/" target="_blank"><i class="fa fa-instagram fa-fw"></i></a></li>
+            <li><a href="https://twitter.com/Dhanya_313" target="_blank"><i class="fa fa-twitter fa-fw"></i></a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=100068726438333" target="_blank"><i class="fa fa-facebook fa-fw"></i></a></li>
+            <li><a href="https://www.linkedin.com/in/dhanya-venkateswaran-1559b5188/" target="_blank"><i class="fa fa-linkedin fa-fw"></i></a></li>
+        </ul>
+        <p> Copyright &copy; Cinder 2021. All rights reserved.</p>
+        <span>Made with<span class="heart"> ♥ </span> by Dhanya Venkateswaran</span>
+    </footer>
+</body>
+
+</html>
